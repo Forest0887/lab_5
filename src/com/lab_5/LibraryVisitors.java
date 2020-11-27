@@ -3,8 +3,8 @@ package com.lab_5;
 import java.util.ArrayList;
 
 public abstract class LibraryVisitors {
-    private String surname;
-    private ArrayList<Book> coll_book = new ArrayList<>();
+    private final String surname;
+    private final ArrayList<Book> coll_book = new ArrayList<>();
 
     public LibraryVisitors(String surname){
         this.surname = surname;

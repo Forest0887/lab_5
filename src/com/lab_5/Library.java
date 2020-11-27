@@ -3,7 +3,7 @@ package com.lab_5;
 import java.util.ArrayList;
 
 public class Library {
-    private ArrayList<LibraryVisitors> lib_vis = new ArrayList<>();
+    private final ArrayList<LibraryVisitors> lib_vis = new ArrayList<>();
 
     public void set_lib_vis(LibraryVisitors lib_vis){
         this.lib_vis.add(lib_vis);
@@ -26,5 +26,15 @@ public class Library {
             }
         }
         return copy_lib_viz;
+    }
+
+    public void findReaderByTittleBook(String arg){
+        for (LibraryVisitors lib_vi : lib_vis){
+            for (Book book : lib_vi.getColl_book()){
+                if (book.getName_book().equals(arg)){
+                    System.out.println(lib_vi.getSurname());
+                }
+            }
+        }
     }
 }

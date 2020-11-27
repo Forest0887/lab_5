@@ -30,7 +30,8 @@ public class Main {
         student1.setBook(book2);
         student1.setBook(book3);
         student1.setBook(book4);
-//        student1.printBooks(); // вывод книг взятых студентом
+        student1.printBooks(); // вывод книг взятых студентом
+        System.out.println();
 
         // Создание библиотеки И добавление в нее студентов и преподавателей
         Library library = new Library();
@@ -52,7 +53,10 @@ public class Main {
                 }
             }
         } else {
-            System.out.println("В библиотеке нет поситителей.");
+            System.out.println("В библиотеке нет посетителей.");
         }
+
+        System.out.println();
+        library.findReaderByTittleBook("Хоббит");
     }
 }
