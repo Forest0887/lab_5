@@ -10,7 +10,14 @@ public class Main {
         Student student1 = new Student("Иванов");
         Teacher teacher1 = new Teacher("Петров");
 
+
         student1.setBook(book1);
+        student1.setBook(book2);
+        student1.setBook(book3);
+        student1.printBooks();
+        teacher1.setBook(book2);
+        teacher1.setBook(book3);
+
 
 
 

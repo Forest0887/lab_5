@@ -12,4 +12,8 @@ public class Book {
     public String getName_book() {
         return name_book;
     }
+
+    public String getName_author() {
+        return name_author;
+    }
 }
